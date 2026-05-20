@@ -170,7 +170,7 @@ window.PK_CONTENT = {
   ],
   skills: [
     { cat: 'Spoken Languages',      items: ['German (native)', 'English (C1)'] },
-    { cat: 'Programming Languages', items: ['C++', 'JavaScript', 'Python', 'Rust', 'GLSL', 'Java', 'Pascal'] },
+    { cat: 'Programming Languages', items: ['C++', 'JavaScript', 'Python', 'Rust', 'GLSL', 'SQL' , 'Java', 'Pascal'] },
     { cat: 'Tools & Infra',         items: ['Linux', 'Nix', 'Git', 'Docker', 'LaTeX', 'Bash', 'CMake'] },
     { cat: 'Numerics & Simulation', items: ['SPH', 'FEM', 'PBD', 'Continuum Mechanics', 'Fluid Dynamics', 'Rigid Body Dynamics'] },
     { cat: 'Geometry Processing',   items: ['DDG', 'Mesh-Offsets', 'Mesh-Booleans', 'Quadmeshing'] },
