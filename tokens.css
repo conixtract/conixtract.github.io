@@ -1,0 +1,141 @@
+/* Shared design tokens — Paul Kern personal site.
+   Dark by default. Light variant via [data-theme="light"] inside each variant root.
+   The variants live inside DCArtboards on a beige canvas; they own their own
+   background via .pk-root, so a "dark" artboard always stays dark on the canvas. */
+
+.pk-root {
+  /* gradient palette (constant across themes — used as accents) */
+  --pk-pink:    #f72585;
+  --pk-plum:    #b5179e;
+  --pk-indigo:  #7209b7;
+  --pk-ultra:   #560bad;
+  --pk-azure:   #480ca8;
+  --pk-royal:   #3a0ca3;
+  --pk-persian: #3f37c9;
+  --pk-sapph:   #4361ee;
+  --pk-sky:     #4895ef;
+  --pk-aqua:    #4cc9f0;
+
+  /* DARK theme (default) */
+  --pk-bg:        oklch(0.16 0.02 285);
+  --pk-bg-2:      oklch(0.19 0.025 285);
+  --pk-bg-soft:   oklch(0.22 0.03 285);
+  --pk-border:    oklch(0.30 0.03 285);
+  --pk-border-2:  oklch(0.40 0.04 285);
+  --pk-fg:        oklch(0.96 0.01 285);
+  --pk-fg-2:      oklch(0.82 0.015 285);
+  --pk-fg-3:      oklch(0.62 0.02 285);
+  --pk-fg-4:      oklch(0.48 0.025 285);
+  --pk-chip-bg:   color-mix(in oklab, var(--pk-aqua) 10%, transparent);
+  --pk-chip-fg:   color-mix(in oklab, var(--pk-aqua) 75%, white);
+  --pk-link:      var(--pk-aqua);
+  --pk-accent:    var(--pk-pink);
+  --pk-thumb-bg:  oklch(0.23 0.05 290);
+
+  /* Type */
+  --pk-font-sans: 'Inter Tight', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+  --pk-font-mono: 'JetBrains Mono', 'IBM Plex Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --pk-font-disp: 'Inter Tight', 'Inter', system-ui, sans-serif;
+
+  color: var(--pk-fg);
+  background: var(--pk-bg);
+  font-family: var(--pk-font-sans);
+  font-feature-settings: 'ss01', 'cv11';
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.pk-root[data-theme='light'] {
+  --pk-bg:        oklch(0.985 0.005 90);
+  --pk-bg-2:      oklch(0.96 0.008 90);
+  --pk-bg-soft:   oklch(0.93 0.01 90);
+  --pk-border:    oklch(0.86 0.012 90);
+  --pk-border-2:  oklch(0.76 0.012 90);
+  --pk-fg:        oklch(0.18 0.02 285);
+  --pk-fg-2:      oklch(0.30 0.02 285);
+  --pk-fg-3:      oklch(0.45 0.02 285);
+  --pk-fg-4:      oklch(0.58 0.02 285);
+  --pk-chip-bg:   color-mix(in oklab, var(--pk-indigo) 10%, transparent);
+  --pk-chip-fg:   color-mix(in oklab, var(--pk-indigo) 70%, black);
+  --pk-link:      var(--pk-indigo);
+  --pk-accent:    var(--pk-plum);
+  --pk-thumb-bg:  oklch(0.92 0.025 285);
+}
+
+/* ---------- shared atoms used across variants ---------- */
+
+.pk-root, .pk-root * { box-sizing: border-box; }
+.pk-root a { color: inherit; text-decoration: none; }
+.pk-root p { margin: 0; }
+.pk-root h1, .pk-root h2, .pk-root h3, .pk-root h4 { margin: 0; font-weight: 500; letter-spacing: -0.01em; }
+
+.pk-mono { font-family: var(--pk-font-mono); font-feature-settings: 'zero', 'ss02'; }
+
+.pk-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: var(--pk-chip-bg);
+  color: var(--pk-chip-fg);
+  font-family: var(--pk-font-mono);
+  font-size: 11px;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+}
+
+/* Gradient text used for the name / display headings */
+.pk-grad {
+  background: linear-gradient(95deg,
+    var(--pk-pink) 0%,
+    var(--pk-plum) 22%,
+    var(--pk-indigo) 44%,
+    var(--pk-sapph) 70%,
+    var(--pk-aqua) 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+}
+
+/* Subtle scrollbars for the artboards */
+.pk-root *::-webkit-scrollbar { width: 6px; height: 6px; }
+.pk-root *::-webkit-scrollbar-thumb { background: var(--pk-border); border-radius: 999px; }
+
+/* Thumbnail tile – used for the year-list project entries.
+   Pure CSS, no SVG art — each variant picks a hue (--h) and the gradient
+   stays consistent with the palette. */
+.pk-thumb {
+  width: 44px; height: 44px;
+  flex: 0 0 44px;
+  border-radius: 8px;
+  background:
+    radial-gradient(120% 120% at 0% 0%, hsl(var(--h, 320) 95% 65% / 0.85), transparent 60%),
+    radial-gradient(120% 120% at 100% 100%, hsl(calc(var(--h, 320) - 40) 90% 55% / 0.85), transparent 55%),
+    var(--pk-thumb-bg);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--pk-border);
+}
+.pk-thumb::after {
+  content: '';
+  position: absolute; inset: 6px;
+  border-radius: 4px;
+  background:
+    repeating-linear-gradient(45deg,
+      rgba(255,255,255,0.10) 0 2px,
+      transparent 2px 5px);
+  mix-blend-mode: overlay;
+}
+
+/* Link arrow that lifts on hover (used in all variants) */
+.pk-arrow {
+  display: inline-block;
+  transition: transform .2s cubic-bezier(.3,.7,.3,1);
+}
+.pk-row:hover .pk-arrow,
+a:hover .pk-arrow { transform: translate(2px, -2px); }
+
+/* Reveal on scroll — pure fade, no position shift. Re-triggers when an
+   element scrolls back below the viewport. */
+.pk-reveal { opacity: 0; transition: opacity .7s ease-out; }
+.pk-reveal.is-in { opacity: 1; }
