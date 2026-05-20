@@ -120,7 +120,7 @@ window.PK_CONTENT = {
     {
       year: '2025',
       title: 'Auto-Linker',
-      desc: 'Obsidian plugin that automatically detects unlinked notes and links them — published in the community plugin registry.',
+      desc: 'Obsidian plugin that automatically detects unlinked notes and links them.',
       tags: ['JavaScript', 'Obsidian'],
       hue: 0,
       href: 'https://github.com/conixtract/auto-linker',
