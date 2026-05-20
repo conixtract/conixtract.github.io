@@ -878,3 +878,11 @@ a.spc-paper:hover { transform: translateY(-1px); }
 .pk-spectrum .spc-foot-sep {
   width: 1px; height: 12px; background: var(--pk-border-2);
 }
+.pk-spectrum .spc-foot-link {
+  color: var(--pk-fg-3);
+  text-decoration: none;
+  transition: color .2s;
+}
+.pk-spectrum .spc-foot-link:hover {
+  color: var(--pk-aqua);
+}

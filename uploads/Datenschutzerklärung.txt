@@ -1,0 +1,37 @@
+Datenschutzerklärung
+
+Diese Erklärung informiert darüber, welche personenbezogenen Daten beim Besuch dieser Website verarbeitet werden, auf welcher Rechtsgrundlage dies geschieht und welche Rechte Ihnen nach der Datenschutz-Grundverordnung (DSGVO) zustehen. Dies ist eine statische, persönliche Website. Sie hat keine Nutzerkonten, kein Kontaktformular, keine Analyse-Tools und setzt keine Werbe- oder Tracking-Cookies.
+
+1. Verantwortlicher
+Paul Kern
+Annuntiatenbach 29
+52062 Aachen
+Deutschland
+E-Mail: paul.kern1@rwth-aachen.de
+
+2. Hosting (GitHub Pages)
+Diese Website wird über GitHub Pages gehostet, einen Dienst der GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA — einer Tochtergesellschaft der Microsoft Corporation. Beim Aufruf der Website erhebt und speichert der Hosting-Anbieter automatisch Informationen, die Ihr Browser übermittelt, in Server-Logfiles. Dazu gehören typischerweise: Ihre IP-Adresse, Datum und Uhrzeit des Zugriffs, die angeforderte Datei bzw. Seite, die zuvor besuchte Seite (Referrer-URL) sowie Browsertyp, -version und Betriebssystem. Die Verarbeitung dient der zuverlässigen und sicheren Bereitstellung der Website. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer funktionsfähigen und sicheren Darstellung der Website). Da der Anbieter in den USA ansässig ist, können personenbezogene Daten (insbesondere Ihre IP-Adresse) dorthin übermittelt werden. GitHub/Microsoft nimmt am EU-US Data Privacy Framework teil, für das die Europäische Kommission einen Angemessenheitsbeschluss nach Art. 45 DSGVO erlassen hat. Weitere Informationen finden Sie in der Datenschutzerklärung von GitHub: https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement
+
+3. Von der Website geladene externe Ressourcen
+Zur Darstellung und zum Betrieb lädt diese Website derzeit einige Ressourcen direkt von Servern Dritter. Beim Laden einer solchen Ressource stellt Ihr Browser eine Verbindung zum jeweiligen Anbieter her und übermittelt dabei Ihre IP-Adresse. Folgende Dritte sind beteiligt:
+
+Google Fonts
+Die Schriftarten „Inter Tight" und „JetBrains Mono" werden von Google-Servern geladen (Anbieter: Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, sowie Google LLC, USA). Beim Öffnen einer Seite fordert Ihr Browser diese Schriftarten von Google an und übermittelt dabei Ihre IP-Adresse. Zweck ist eine einheitliche und ansprechende Typografie; Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Eine Übermittlung in die USA kann erfolgen; Google nimmt am EU-US Data Privacy Framework teil. Weitere Informationen: https://policies.google.com/privacy
+
+unpkg (JavaScript-Bibliotheken)
+Die Website lädt die Bibliotheken React und Babel über das Content-Delivery-Network unpkg (unpkg.com). Beim Öffnen einer Seite fordert Ihr Browser diese Dateien an und übermittelt dabei Ihre IP-Adresse an den CDN-Betreiber. Zweck ist der technische Betrieb der Website; Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO.
+
+4. Lokaler Speicher (Local Storage)
+Diese Website speichert einen einzigen Eintrag im lokalen Speicher Ihres Browsers mit der Bezeichnung „pk-theme". Er merkt sich, ob Sie das helle oder dunkle Design gewählt haben. Diese Information verbleibt auf Ihrem Gerät, wird nicht an mich oder Dritte übermittelt und enthält keine personenbezogenen Daten. Sie dient ausschließlich der von Ihnen aktiv gewählten Anzeige-Einstellung.
+
+5. Externe Links
+Die Website verlinkt auf externe Profile und Kontaktmöglichkeiten (z. B. GitHub, ORCID und einen E-Mail-Link). Diese Links übermitteln erst dann Daten, wenn Sie sie aktiv anklicken und zur Website des Dritten gelangen, für die dann dessen eigene Datenschutzerklärung gilt. Der E-Mail-Link öffnet lediglich Ihr eigenes E-Mail-Programm; es werden keine Daten an mich gesendet, bevor Sie sich entscheiden zu schreiben.
+
+6. Cookies und Tracking
+Diese Website setzt keine eigenen Cookies und verwendet keine Analyse-, Tracking-, Profiling- oder Werbe-Tools.
+
+7. Ihre Rechte
+Ihnen stehen hinsichtlich Ihrer personenbezogenen Daten nach der DSGVO folgende Rechte zu: Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen eine auf berechtigtem Interesse beruhende Verarbeitung (Art. 21 DSGVO). Zur Ausübung dieser Rechte können Sie mich über die Angaben in Abschnitt 1 kontaktieren. Ihnen steht zudem ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu (Art. 77 DSGVO). Die für den Verantwortlichen zuständige Behörde ist: Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW), Kavalleriestraße 2-4, 40213 Düsseldorf.
+
+8. Stand
+Stand: 20. Mai 2026.

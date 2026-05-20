@@ -283,6 +283,10 @@ function PKSpectrum() {
         <div className="spc-footstrip pk-mono">
           <span>© {new Date().getFullYear()} {C.name}</span>
           <span className="spc-foot-sep" />
+          <a href="impressum.html" className="spc-foot-link">Impressum</a>
+          <span className="spc-foot-sep" />
+          <a href="privacy.html" className="spc-foot-link">Privacy</a>
+          <span className="spc-foot-sep" />
           <span>this website was built with claude</span>
           <span className="spc-foot-sep" />
           <span>v3.0 spectrum</span>
