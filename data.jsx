@@ -194,8 +194,8 @@ window.PK_CONTENT = {
     },
     {
       label: 'Project',
-      handle: '— placeholder —',
-      href:   '#',
+      handle: '44Bars',
+      href:   'https://github.com/conixtract/44Bars',
       hue:    320,
     },
   ],
