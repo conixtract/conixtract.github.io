@@ -16,6 +16,12 @@ function PKSpectrum() {
   });
   useEffectS(() => {
     try {localStorage.setItem('pk-theme', theme);} catch {/* ignore */}
+    // sync html background so iOS/macOS overscroll bounce matches the theme
+    if (typeof document !== 'undefined') {
+      document.documentElement.style.background = theme === 'light'
+        ? 'oklch(0.985 0.005 90)'
+        : 'oklch(0.16 0.02 285)';
+    }
   }, [theme]);
 
   // scroll-reveal observer — fades elements in when they enter the viewport,

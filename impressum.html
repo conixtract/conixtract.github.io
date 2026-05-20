@@ -14,6 +14,10 @@
 
   <style>
     html, body { height: 100%; margin: 0; }
+    html, body {
+      overscroll-behavior-y: none;
+      background: oklch(0.16 0.02 285);
+    }
   </style>
 </head>
 <body class="pk-root pk-static" data-theme="dark" data-lang="en">
@@ -22,6 +26,10 @@
     try {
       document.body.setAttribute('data-theme', localStorage.getItem('pk-theme') || 'dark');
       document.body.setAttribute('data-lang',  localStorage.getItem('pk-lang')  || 'en');
+      // sync the page background to theme so the bounce area matches
+      if ((localStorage.getItem('pk-theme') || 'dark') === 'light') {
+        document.documentElement.style.background = 'oklch(0.985 0.005 90)';
+      }
     } catch (e) { /* keep defaults */ }
   </script>
 
