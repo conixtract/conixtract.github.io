@@ -128,7 +128,7 @@ window.PK_CONTENT = {
     {
       year: '2025',
       title: 'Minesweeper',
-      desc: 'A Minesweeper clone built as a first Rust project to learn the language.',
+      desc: 'A Minesweeper clone built as a first project to learn Rust.',
       tags: ['Rust'],
       hue: 40,
       href: 'https://github.com/conixtract/minesweeper',
