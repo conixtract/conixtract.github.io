@@ -886,3 +886,219 @@ a.spc-paper:hover { transform: translateY(-1px); }
 .pk-spectrum .spc-foot-link:hover {
   color: var(--pk-aqua);
 }
+
+/* ============================================================ */
+/* MOBILE — applies only at <= 768px. Desktop layout untouched. */
+/* ============================================================ */
+@media (max-width: 768px) {
+
+  /* ---------- nav ---------- */
+  .pk-spectrum .spc-nav {
+    grid-template-columns: 1fr auto;
+    padding: 14px 16px;
+    font-size: 10px;
+    gap: 10px;
+  }
+  .pk-spectrum .spc-nav-c { display: none; }
+  .pk-spectrum .spc-nav-r { gap: 10px; }
+  .pk-spectrum .spc-tt-opt {
+    padding: 4px 9px;
+    font-size: 9.5px;
+    letter-spacing: 0.12em;
+  }
+  .pk-spectrum .spc-tt-opt svg { display: none; }
+
+  /* ---------- hero ---------- */
+  .pk-spectrum .spc-hero {
+    padding: 56px 20px 28px;
+    max-width: 100%;
+  }
+  .pk-spectrum .spc-hero-name {
+    font-size: clamp(40px, 13vw, 64px);
+    letter-spacing: 0.005em;
+    margin-bottom: 14px;
+  }
+  .pk-spectrum .spc-hero-role {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .pk-spectrum .spc-hero-meta { gap: 6px; }
+  .pk-spectrum .spc-hero-pill {
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  .pk-spectrum .spc-hr {
+    margin: 4px 16px 8px;
+  }
+
+  /* ---------- bento ---------- */
+  .pk-spectrum .spc-bento {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-auto-rows: auto;
+    padding: 16px 16px 24px;
+    gap: 10px;
+  }
+  .pk-spectrum .spc-card { padding: 16px; }
+  .pk-spectrum .spc-card-photo {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    padding: 10px;
+    max-width: 340px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .pk-spectrum .spc-photo-frame {
+    aspect-ratio: 4 / 5;
+  }
+  .pk-spectrum .spc-card-stat {
+    grid-column: span 1;
+    grid-row: auto;
+    padding: 12px 12px;
+    min-height: 110px;
+  }
+  .pk-spectrum .spc-stat-l { font-size: 9.5px; letter-spacing: 0.12em; }
+  .pk-spectrum .spc-stat-v { font-size: 30px; }
+  .pk-spectrum .spc-stat-d { font-size: 10.5px; line-height: 1.35; }
+  .pk-spectrum .spc-card-links {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 14px 16px;
+    gap: 10px;
+  }
+  .pk-spectrum .spc-card-h {
+    margin-right: 0;
+    margin-bottom: 2px;
+  }
+  .pk-spectrum .spc-link {
+    flex: 1 1 auto;
+  }
+
+  /* ---------- section heads ---------- */
+  .pk-spectrum .spc-sec {
+    padding: 56px 20px 0;
+  }
+  .pk-spectrum .spc-shead {
+    margin-bottom: 24px;
+    gap: 12px;
+  }
+  .pk-spectrum .spc-shead-t {
+    font-size: 21px;
+  }
+
+  /* ---------- about ---------- */
+  .pk-spectrum .spc-about-lead {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+  .pk-spectrum .spc-about-p {
+    font-size: 15px;
+    margin-bottom: 14px;
+  }
+
+  /* ---------- career timeline — drop spine, use left border ---------- */
+  .pk-spectrum .spc-tl-item {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding-bottom: 16px;
+  }
+  .pk-spectrum .spc-tl-spine { display: none; }
+  .pk-spectrum .spc-tl-year {
+    padding-top: 0;
+    margin-bottom: 0;
+    font-size: 10.5px;
+  }
+  .pk-spectrum .spc-tl-body {
+    border-left: 2px solid var(--pk-sapph);
+    padding: 12px 14px;
+  }
+  .pk-spectrum .spc-tl-item.edu .spc-tl-body  { border-left-color: var(--pk-aqua); }
+  .pk-spectrum .spc-tl-item.extra .spc-tl-body { border-left-color: var(--pk-pink); }
+  .pk-spectrum .spc-tl-title { font-size: 15.5px; }
+  .pk-spectrum .spc-tl-org   { font-size: 12.5px; margin-bottom: 8px; }
+  .pk-spectrum .spc-tl-desc  { font-size: 13px; }
+
+  /* ---------- projects — stack ---------- */
+  .pk-spectrum .spc-proj-row {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 14px;
+  }
+  .pk-spectrum .spc-proj-thumb { display: none; }
+  .pk-spectrum .spc-proj-year { font-size: 11px; }
+  .pk-spectrum .spc-proj-t    { font-size: 16px; }
+  .pk-spectrum .spc-proj-d    { font-size: 13px; max-width: none; }
+  .pk-spectrum .spc-proj-tags {
+    justify-content: flex-start;
+    max-width: none;
+  }
+
+  /* ---------- research — single column ---------- */
+  .pk-spectrum .spc-papers {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .pk-spectrum .spc-paper-t { font-size: 14.5px; }
+
+  /* ---------- skills — single column ---------- */
+  .pk-spectrum .spc-skills {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .pk-spectrum .spc-skill-card { padding: 16px 18px; }
+
+  /* ---------- hobbies — single column ---------- */
+  .pk-spectrum .spc-hobbies {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  /* ---------- contact ---------- */
+  .pk-spectrum .spc-contact-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 28px 20px;
+    border-radius: 16px;
+  }
+  .pk-spectrum .spc-contact-h {
+    font-size: clamp(34px, 11vw, 56px);
+    letter-spacing: -0.025em;
+    margin-bottom: 14px;
+  }
+  .pk-spectrum .spc-contact-p { font-size: 15px; }
+  .pk-spectrum .spc-contact-row {
+    grid-template-columns: 64px 1fr auto;
+    padding: 12px 14px;
+    gap: 10px;
+  }
+  .pk-spectrum .spc-contact-row-l { font-size: 10px; letter-spacing: 0.12em; }
+  .pk-spectrum .spc-contact-row-h { font-size: 13px; }
+  .pk-spectrum .spc-contact-row:hover { padding-left: 18px; }
+
+  /* ---------- footer ---------- */
+  .pk-spectrum .spc-footstrip {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    gap: 8px 10px;
+    padding-top: 24px;
+    font-size: 9.5px;
+  }
+  .pk-spectrum .spc-foot-sep { height: 10px; }
+}
+
+/* ---------- tighter pass for the smallest phones ---------- */
+@media (max-width: 380px) {
+  .pk-spectrum .spc-bento {
+    grid-template-columns: 1fr 1fr;
+  }
+  .pk-spectrum .spc-card-stat:nth-of-type(3) {
+    grid-column: 1 / -1;
+  }
+  .pk-spectrum .spc-stat-v { font-size: 34px; }
+  .pk-spectrum .spc-hero-name { letter-spacing: 0.01em; }
+}
